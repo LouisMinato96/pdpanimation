@@ -1,0 +1,7 @@
+<div class="box box1">
+   <div class="parent">
+     <ng-container *ngFor="let pdCard of productCardList; let i = index;" >
+        <app-product-card [setcardIndex]="i" [setproduct]="productCardList[i]" ></app-product-card>
+     </ng-container>
+   </div>
+ </div>

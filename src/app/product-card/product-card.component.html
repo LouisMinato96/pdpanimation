@@ -1,0 +1,10 @@
+<div class="product-card" 
+   [@pdpCardAnimation]="{value: getPdpCardAnimationState(cardIndex) , params: { x_value:getCardXYparam(cardIndex).x_value+'%' , y_value:getCardXYparam(cardIndex).y_value+'px'} }"
+   (@pdpCardAnimation.start)="pdpCardAnimationStart(cardIndex)"
+   (click)="pdpCardClicked(cardIndex, product)" >
+
+   <div class="pdpImages">
+      {{ product }}
+   </div>
+
+</div>
